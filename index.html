@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio Generator</h1>
+    </header>
+
+    <main>
+        <section id="input-section">
+            <h2>Gib hier deine Daten ein</h2>
+            <form id="portfolioForm">
+                <label for="profilePicture">Bild</label>
+                <input type="file" id="profilePicture" name="Picture" accept="image/*">
+
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" name="name" required>
+
+                <label for="professionInput">Beruf:</label>
+                <input type="text" id="professionInput" name="profession" required>
+
+                <label for="bioInput">Über mich:</label>
+                <textarea id="bioInput" name="bio" rows="4" required></textarea>
+
+                <button type="submit">Portfolio erstellen</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="output-section">
+            <h2>Vorschau deines Portfolios</h2>
+                <div id="portfolioOutput">
+                    <p>Gib deine Daten im Formular ein, um eine Vorschau zu sehen.</p>
+                </div>
+        </section>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
